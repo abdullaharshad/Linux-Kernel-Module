@@ -1,0 +1,22 @@
+Step 1: Install header files by typing following command:
+
+	sudo apt-get install linux-headers-$(uname -r)
+
+
+Step 2: Compile the Kernel Module
+	
+	Run 'make' command (in the directory containing makefile and your-module.c file)
+
+
+Step 3: Insert Module 
+	
+	Run sudo insmod ./module_name.ko 
+		
+		OR
+ 
+	Run sudo insmod ./module_name.ko var_name = var_value ..
+
+
+Step 4: To see output
+
+	Run dmesg|tail -6
