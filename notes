@@ -1,0 +1,11 @@
+sudo apt-get install linux-headers-$(uname -r)
+
+Write Kernel module
+
+Create makefile to compile linux kernel
+
+Run 'make' command
+
+Run sudo insmod ./module_name.ko OR sudo insmod ./module_name.ko var_name = var_value ..
+
+Run dmesg|tail -6
